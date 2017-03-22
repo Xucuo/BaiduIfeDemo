@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/*css 公用样式 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    /* border: none; */
+    padding: 0;
+    margin: 0;
+  /*   outline-style: none; */
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "Microsoft YaHei";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+   /*  font-size: 12px; */
+    margin: 0;
+}
+textarea {
+    resize: none;
+}
+
+/*·图片样式*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  */
+table {
+    border-collapse: collapse;
+}
+
+/*  body {
+   font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+   color: #666;
+   background: #dedede
+}
+*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+   /*  color: #666; */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+   /*  font-weight: normal; */
+   /*  font-size: 100%; */
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/定义常用类/
+.w {
+    /*版心 */
+    width: 1270px;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.inner_c {
+    width: 1230px;
+    margin: 0 auto;
+    background-color: #dedede;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+
+
+/* 布局开始 */
+
+/* 左边栏开始 */
+#main {
+    background-color: #eee;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+
+}
+#main .fl {
+    width: 160px;
+    height: 80px;
+    border: 1px solid #999;
+    padding: 20px ;
+}
+
+#main .fl h2{
+    float: right;
+}
+/* 左边栏结束 */
+
+
+/* 中间栏开始 */
+#main .mid {
+    padding: 20px;
+    border: 1px solid #999;
+    float: left;
+    margin:0 20px;
+}
+
+/* 中间栏结束 */
+
+/* 右边栏开始 */
+#main .fr {
+    width: 80px;
+    padding:20px ;
+    border:1px solid #999;
+    float: left;
+}
+#main .fr ul li {
+    border: 1px solid #999;
+    margin-bottom: 20px;
+}
+
+#main .fr ul li:last-child {
+    margin-bottom: 0;
+}
+/* 右边栏结束 */
